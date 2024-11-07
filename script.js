@@ -1,13 +1,13 @@
 // Kalkulator Function
 
 const b1 = document.querySelector('#b1');
-const calculatorgrid = document.querySelector('.calculatorgrid');
+const display = document.querySelector('#display');
 
 b1.addEventListener('click' , function () {
-    if (calculatorgrid.innerText == 0) {
-        calculatorgrid.innerText = '1';
+    if (display.innerText == 0) {
+        display.innerText = '1';
      } else {
- calculatorgrid.innerText = calculatorgrid.innerText + '1';
+ display.innerText = display.innerText + '1';
     
 
     }
