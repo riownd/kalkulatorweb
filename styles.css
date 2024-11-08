@@ -1,52 +1,62 @@
-*, *::before, *::after {
-    box-sizing: border-box;
-    font-family: Gotham Rounded, sans-serif;
-    font-weight: normal;
-  }
-  
-  body {
-    background: linear-gradient(to right, #ffffff, #ffffff);
-  }
-  
-  .calculatorgrid {
-    display: grid;
-    justify-content: center;
-    align-content: center;
-    min-height: 100vh;
-    grid-template-columns: repeat(4, 100px);
-    grid-template-rows: minmax(100px, auto) repeat(5, 100px);
-  }
-  
-  .calculatorgrid > button {
-    cursor: pointer;
-    font-size: 2rem;
-    border: 1px solid white;
-    outline: none;
-    background-color: rgba(255, 255, 255, .75);
-  }
-  
-  .calculatorgrid > button:hover {
-    background-color: rgba(255, 255, 255, .9);
-  }
-  
-  .span-two {
-    grid-column: span 2;
-  }
-  
-  .output {
-    grid-column: 1 / -1;
-    background-color: rgba(255, 255, 255, 0.75);
-    padding: 10px;
-    word-wrap: break-word;
-    word-break: break-all;
-  }
-  
-  .output .previous-operand {
-    color: rgba(246, 10, 10, 0.75);
-    font-size: 1.5rem;
-  }
-  
-  .output .current-operand {
-    color: white;
-    font-size: 2.5rem;
-  }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f0f0;
+}
+
+.calculator {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  width: 250px;
+}
+
+.display {
+  width: 100%;
+  height: 40px;
+  margin-bottom: 10px;
+  text-align: right;
+  font-size: 24px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2px;
+}
+
+.btn {
+  padding: 20px;
+  font-size: 18px;
+  background-color: #f2f2f2;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btn:hover {
+  background-color: #ddd;
+}
+
+.btn.clear {
+  background-color: #ff6666;
+  color: #fff;
+}
+
+.btn.clear:hover {
+  background-color: #ff4d4d;
+}
