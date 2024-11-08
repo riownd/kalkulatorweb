@@ -10,7 +10,7 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-color: #f0f0f0;
+  background-color: #ffffff;
 }
 
 .calculator {
@@ -28,7 +28,7 @@ body {
   text-align: right;
   font-size: 24px;
   padding: 10px;
-  border: 1px solid #ddd;
+  border: 1px solid #ffffff;
   border-radius: 5px;
 }
 
@@ -41,15 +41,15 @@ body {
 .btn {
   padding: 20px;
   font-size: 18px;
-  background-color: #f2f2f2;
-  border: 1px solid #ccc;
+  background-color: #ffffff;
+  border: 1px solid #ffffff;
   border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.3s;
 }
 
 .btn:hover {
-  background-color: #ddd;
+  background-color: #ffffff;
 }
 
 .btn.clear {
