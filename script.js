@@ -1,14 +1,17 @@
-// Kalkulator Function
+let display = document.getElementById('display');
 
-const b1 = document.querySelector('#b1');
-const display = document.querySelector('#display');
+function appendToDisplay(value) {
+    display.value += value;
+}
 
-b1.addEventListener('click' , function () {
-    if (display.innerText == 0) {
-        display.innerText = '1';
-     } else {
- display.innerText = display.innerText + '1';
-    
+function clearDisplay() {
+    display.value = '';
+}
 
+function calculateResult() {
+    try {
+        display.value = eval(display.value);
+    } catch (e) {
+        display.value = 'Error';
     }
-} )
+}
